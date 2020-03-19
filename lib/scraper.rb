@@ -34,7 +34,7 @@ class Scraper
    end
    social_links[:profile_quote] = doc.css(".profile-quote").text if doc.css(".profile-quote")
    
-   social_links[:bio] = doc.css(".description-holder p").text if doc.css("div.description-holder")
+   social_links[:bio] = doc.css("div.description-holder p").text if doc.css("div.description-holder")
    
    social_links
   end
