@@ -18,7 +18,8 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    attributes_hash.each do
+    attributes_hash.each do |student_links|
+    end
   end
 
   def self.all
