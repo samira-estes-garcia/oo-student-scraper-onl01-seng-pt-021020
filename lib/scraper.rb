@@ -28,8 +28,10 @@ class Scraper
         social_links[:linkedin] = link
       elsif link.include?("github")
         social_links[:github] = link
-      else link.include?("twitter")
+      elsif link.include?("twitter")
         social_links[:twitter] = link
+      else 
+        
       end
    end
    social_links[:profile_quote] = doc.css(".profile-quote").text if doc.css(".profile-quote")
