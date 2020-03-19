@@ -32,7 +32,7 @@ class Scraper
         student[:twitter] = link
       end
    end
-   social_links[:profile_quote] = profile_page.css(".profile-quote").text if profile_page.css(".profile-quote")
+   social_links[:profile_quote] = doc.css(".profile-quote").text if doc.css(".profile-quote")
    
    social_links[:bio] = 
    
